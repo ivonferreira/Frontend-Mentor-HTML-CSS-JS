@@ -106,5 +106,23 @@ footer{
     top: 100%;
 
 }
+body > button#back {
+    display:none;
+    margin: auto;
+    height: 20px;
+    width:50px;
+    background-color:hsl(215, 20%, 25%) ;
+    color:#ffffff;
+}
+body > button#back:hover {
+    background-color: #ffffff;
+    color:hsl(213, 19%, 18%);
+    cursor:pointer;
+}
+
 .attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution a { color: hsl(228, 45%, 44%); text-decoration: none;}
+.attribution a:hover {
+    color:white;
+    text-decoration: underline;
+}

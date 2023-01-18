@@ -6,6 +6,7 @@ let bt5 = document.getElementById('rate5');
 let score = document.querySelector('span#score');
 let before = document.querySelector('div#before');
 let after = document.querySelector('div#after');
+let backBt = document.querySelector('button#back')
 
 function rate(n=0){
     let buttons = [bt1, bt2, bt3, bt4, bt5]
@@ -74,4 +75,11 @@ function submit(){
     }else{
         window.alert('Please choise a rate!')
     }
+    backBt.style.display ='block'
+}
+
+function back(){
+    before.style.display = 'block'
+    after.style.display = 'none'
+    backBt.style.display = 'none'
 }
