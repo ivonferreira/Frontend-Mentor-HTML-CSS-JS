@@ -24,21 +24,16 @@
         to help us improve our offering!
       </p>
       
-      <button class="rater" id="rate1" onclick="rate1()" value = "OFF" onmouseenter="hover(bt1)" onmouseout="hoverout(bt1)">1</button>
-      <button class="rater" id="rate2" onclick="rate2()" value="OFF" onmouseenter="hover(bt2)" onmouseout="hoverout(bt2)">2</button>
-      <button class="rater" id="rate3" onclick="rate3()" value="OFF" onmouseenter="hover(bt3)" onmouseout="hoverout(bt3)">3</button>
-      <button class="rater" id="rate4" onclick="rate4()" value="OFF" onmouseenter="hover(bt4)" onmouseout="hoverout(bt4)">4</button>
-      <button class="rater" id="rate5" onclick="rate5()" value="OFF" onmouseenter="hover(bt5)" onmouseout="hoverout(bt5)">5</button>
+      <button class="rater" id="rate1" onclick="rate(0)" value = "OFF" onmouseenter="hover(bt1)" onmouseout="hoverout(bt1)">1</button>
+      <button class="rater" id="rate2" onclick="rate(1)" value="OFF" onmouseenter="hover(bt2)" onmouseout="hoverout(bt2)">2</button>
+      <button class="rater" id="rate3" onclick="rate(2)" value="OFF" onmouseenter="hover(bt3)" onmouseout="hoverout(bt3)">3</button>
+      <button class="rater" id="rate4" onclick="rate(3)" value="OFF" onmouseenter="hover(bt4)" onmouseout="hoverout(bt4)">4</button>
+      <button class="rater" id="rate5" onclick="rate(4)" value="OFF" onmouseenter="hover(bt5)" onmouseout="hoverout(bt5)">5</button>
       <p><input class="submit" type="submit" value="SUBMIT" onclick="submit()"></p>
       
     </div>
     <!-- Rating state end -->
-    <!-- Thank you state start 
-    You selected  Add rating here out of 5
-    Thank you!
-    We appreciate you taking the time to give a rating. If you ever need more support,
-    don’t hesitate to get in touch!
-     Thank you state end -->
+    
      <div id="after">
       <img src="images/illustration-thank-you.svg" alt="Thank You">
       <div>You selected <span id="score">n</span> out of 5</div>
@@ -49,7 +44,7 @@
     </p>
      </div>
   </main>
-  
+  <!-- Thank you state end -->
   
   <footer>
     <div class="attribution">
