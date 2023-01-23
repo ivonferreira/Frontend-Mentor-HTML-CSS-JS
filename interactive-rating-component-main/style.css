@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 *{
     margin: 0px;
     padding: 0px;
@@ -44,7 +45,33 @@ div#before > div > img {
     left:50%;
     transform: translate(-50%,-50%);
 }
-.rater {
+.ratebtn{
+    display: inline-block;
+}
+.ratebtn label{
+    display:inline-block;
+    background-color: #3a4655;
+    color:#959eac;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 50%;
+    margin-top: 20px;
+
+}
+.ratebtn input{
+    display:none;
+}
+.ratebtn input:hover + label{
+    background-color: #959eac;
+    color:#3a4655;
+}
+.ratebtn input:checked + label{
+    background-color: #fb7413;
+    color:#3a4655;
+}
+/*.rater {
     background-color:#3a4655;
     border: 0px;
     color:#959eac;
@@ -53,7 +80,7 @@ div#before > div > img {
     border-radius:50%;
     margin: 30px 8px;
     
-}
+}*/
 div#after{
     display:none;
     text-align: center;
