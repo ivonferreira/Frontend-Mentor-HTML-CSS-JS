@@ -1,0 +1,47 @@
+/*
+- White: hsl(0, 0%, 100%)
+- Light gray: hsl(212, 45%, 89%)
+- Grayish blue: hsl(220, 15%, 55%)
+- Dark blue: hsl(218, 44%, 22%)
+*/
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body, html {
+    color:hsl(220, 15%, 55%);
+    font-family: 'Overpass', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+    background-color: hsl(212, 45%, 89%);
+    height: 100vh;
+    
+}
+main {
+    background-color: hsl(0, 0%, 100%);
+    width: 350px;
+    margin: auto;
+    margin-top:20px;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 15px;
+}
+main > div > h1 {
+    color: hsl(218, 44%, 22%);
+    font-size: 1.6em;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+main > div {
+    padding: 15px;
+}
+main > p > img {
+    width:320px;
+    border-radius: 15px;
+    
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
