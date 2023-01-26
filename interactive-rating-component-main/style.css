@@ -12,7 +12,7 @@ body,html {
     min-height: 100vh;
 
 }
-main {
+form {
     background-color:hsl(213, 19%, 18%);
     max-width: 300px;
     height: 300px;
@@ -22,15 +22,15 @@ main {
     margin-bottom:30px;
     padding:20px;
 }
-main h1 {
+form > fieldset#before > h1 {
     font-size: 17px;
     margin:15px 0px;
 }
-main p {
+form > fieldset#before > p {
     font-size: 15px;
     color: #959eac;
 }
-div#before{
+fieldset#before{
     display:block;
 }
 div.bgstar{
@@ -39,7 +39,7 @@ div.bgstar{
     width: 40px;
     border-radius: 50%;
 }
-div#before > div > img {
+fieldset#before > div > img {
     position: relative;
     top:50%;
     left:50%;
@@ -58,6 +58,7 @@ div#before > div > img {
     padding: 20px;
     border-radius: 50%;
     margin-top: 20px;
+    margin-bottom: 20px;
 
 }
 .ratebtn input{
@@ -71,29 +72,22 @@ div#before > div > img {
     background-color: #fb7413;
     color:#3a4655;
 }
-/*.rater {
-    background-color:#3a4655;
-    border: 0px;
-    color:#959eac;
-    height:40px;
-    width: 40px;
-    border-radius:50%;
-    margin: 30px 8px;
-    
-}*/
-div#after{
+fieldset#after{
     display:none;
     text-align: center;
     
 }
-div#after > img {
+fieldset {
+    border: 0px;
+}
+fieldset#after > img {
     
     display:blocK;
     height:90px;
     margin:auto;
     margin-top: 30px;
 }
-div#after > div {
+fieldset#after > div {
     margin: auto;
     margin-top:20px;
     background-color: hsl(215, 20%, 25%);
@@ -103,11 +97,11 @@ div#after > div {
     font-size: 0.8em;
     padding:5px 0px;
 }
-div#after > h2 {
+fieldset#after > h1 {
     font-size: 1.3em;
     margin: 10px;
 }
-.submit{
+#btnSubmit{
     background-color:hsl(25, 97%, 53%) ;
     color:hsl(0, 0%, 100%);
     font-size: 10px;
@@ -119,7 +113,7 @@ div#after > h2 {
     border: 0px;
     
 }
-.submit:hover {
+#btnSubmit:hover {
     background-color: #ffffff;
     color: hsl(25, 97%, 53%);
     cursor: pointer;

@@ -13,11 +13,8 @@
   
 </head>
 <body>
-
-
-
-  <main>
-    <div id="before">
+  <form>
+    <fieldset id="before" legend="before">
       <div class="bgstar"><img src="images/icon-star.svg" alt="star"></div>
       <h1>How did we do?</h1>
       <p>
@@ -25,46 +22,40 @@
         to help us improve our offering!
       </p>
       <div class="ratebtn">
-        <input type="radio" name="rater" id="rt1">
+        <input type="radio" name="rater" class="rater" id="rt1">
         <label for="rt1">1</label>
       </div>
       <div class="ratebtn">
-        <input type="radio" name="rater" id="rt2">
+        <input type="radio" name="rater" class="rater" id="rt2">
         <label for="rt2">2</label>
       </div>
       <div class="ratebtn">
-        <input type="radio" name="rater" id="rt3">
+        <input type="radio" name="rater" class="rater" id="rt3">
         <label for="rt3">3</label>
       </div>
       <div class="ratebtn">
-        <input type="radio" name="rater" id="rt4">
+        <input type="radio" name="rater" class="rater" id="rt4">
         <label for="rt4">4</label>
       </div>
       <div class="ratebtn">
-        <input type="radio" name="rater" id="rt2">
-        <label for="rt2">2</label>
+        <input type="radio" name="rater" class="rater" id="rt5">
+        <label for="rt5">5</label>
       </div>
-      <!--
-      <button class="rater" id="rate1" onclick="rate(0)" value = "OFF" onmouseenter="hover(bt1)" onmouseout="hoverout(bt1)">1</button>
-      <button class="rater" id="rate2" onclick="rate(1)" value="OFF" onmouseenter="hover(bt2)" onmouseout="hoverout(bt2)">2</button>
-      <button class="rater" id="rate3" onclick="rate(2)" value="OFF" onmouseenter="hover(bt3)" onmouseout="hoverout(bt3)">3</button>
-      <button class="rater" id="rate4" onclick="rate(3)" value="OFF" onmouseenter="hover(bt4)" onmouseout="hoverout(bt4)">4</button>
-      <button class="rater" id="rate5" onclick="rate(4)" value="OFF" onmouseenter="hover(bt5)" onmouseout="hoverout(bt5)">5</button>
-      <p><input class="submit" type="submit" value="SUBMIT" onclick="submit()"></p>
-      -->
-    </div>
+      <p><input id="btnSubmit" type="button" value="SUBMIT" onclick="scored()"></p>
+      
+    </fieldset>
     <!-- Rating state end -->
     
-     <div id="after">
+     <fieldset id="after" legend="after">
       <img src="images/illustration-thank-you.svg" alt="Thank You">
       <div>You selected <span id="score">n</span> out of 5</div>
-    <h2>Thank you!</h2>
+    <h1>Thank you!</h1>
     <p>
       We appreciate you taking the time to give a rating. If you ever need more support,
       don’t hesitate to get in touch!
     </p>
-     </div>
-  </main>
+     </fieldset>
+</form>
   <!-- Thank you state end -->
   <div id="back" onclick="back()">
     <span class="material-icons">
